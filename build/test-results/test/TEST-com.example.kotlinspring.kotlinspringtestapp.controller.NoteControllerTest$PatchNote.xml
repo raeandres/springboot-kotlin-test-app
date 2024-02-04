@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PATCH /api/notes" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-04T18:04:33" hostname="SGMUOBG9R97DC" time="0.023">
+  <properties/>
+  <testcase name="should update an existing note()" classname="com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PatchNote" time="0.011"/>
+  <testcase name="should return NOT FOUND if no note with given ID exists ()" classname="com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PatchNote" time="0.012"/>
+  <system-out><![CDATA[2024-02-05T02:04:33.740+08:00  INFO 35667 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PatchNote]: PatchNote does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-05T02:04:33.742+08:00  INFO 35667 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.kotlinspring.kotlinspringtestapp.KotlinspringtestappApplication for test class com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PatchNote
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/notes
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"99"]
+             Body = {"id":"1","name":"Coffee","description":"Buy Coffee","createdDate":"2024-02-04T18:04:33.744+00:00"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#updateNotes(Note)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":"1","name":"Coffee","description":"Buy Coffee","createdDate":"2024-02-04T18:04:33.744+00:00"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /api/notes
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"99"]
+             Body = {"id":"5","name":"Coffee","description":"Buy Coffee","createdDate":"2024-02-04T18:04:33.755+00:00"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#updateNotes(Note)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.util.NoSuchElementException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"36"]
+     Content type = text/plain;charset=UTF-8
+             Body = Could not find a note with the id: 5
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

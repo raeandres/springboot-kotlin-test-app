@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="POST /api/notes" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-04T18:04:33" hostname="SGMUOBG9R97DC" time="0.024">
+  <properties/>
+  <testcase name="should add new note()" classname="com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PostNewNote" time="0.015"/>
+  <testcase name="should return BAD REQUEST if note with given name already exists()" classname="com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PostNewNote" time="0.008"/>
+  <system-out><![CDATA[2024-02-05T02:04:33.769+08:00  INFO 35667 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PostNewNote]: PostNewNote does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-05T02:04:33.770+08:00  INFO 35667 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.kotlinspring.kotlinspringtestapp.KotlinspringtestappApplication for test class com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$PostNewNote
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/notes
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"113"]
+             Body = {"id":"5","name":"Some Note","description":"Some Note Description","createdDate":"2024-02-04T18:04:33.772+00:00"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#addNote(Note)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":"5","name":"Some Note","description":"Some Note Description","createdDate":"2024-02-04T18:04:33.772+00:00"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/notes
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"109"]
+             Body = {"id":"2","name":"Laundry","description":"Do Laundry Tomorrow","createdDate":"2024-02-04T18:04:33.789+00:00"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#addNote(Note)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.lang.IllegalArgumentException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"43"]
+     Content type = text/plain;charset=UTF-8
+             Body = Note with same name: Laundry already exists
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

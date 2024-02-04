@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kotlinspring.kotlinspringtestapp.service.NoteServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-04T18:04:33" hostname="SGMUOBG9R97DC" time="0.089">
+  <properties/>
+  <testcase name="should call its data source to retrieve notes()" classname="com.example.kotlinspring.kotlinspringtestapp.service.NoteServiceTest" time="0.089"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

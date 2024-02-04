@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GET /api/notes" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-02-04T18:04:33" hostname="SGMUOBG9R97DC" time="0.038">
+  <properties/>
+  <testcase name="should return all notes()" classname="com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$GetNewNote" time="0.027"/>
+  <testcase name="should return a single note()" classname="com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$GetNewNote" time="0.006"/>
+  <testcase name="should return NOT FOUND if the name does not exist ()" classname="com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$GetNewNote" time="0.005"/>
+  <system-out><![CDATA[2024-02-05T02:04:33.698+08:00  INFO 35667 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$GetNewNote]: GetNewNote does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-05T02:04:33.699+08:00  INFO 35667 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.kotlinspring.kotlinspringtestapp.KotlinspringtestappApplication for test class com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$GetNewNote
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/notes
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#getAllNotes()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":"1","name":"Grocery","description":"buy grocery for today","createdDate":"2024-02-04T18:04:33.508+00:00"},{"id":"2","name":"Laundry","description":"Do Laundry Tomorrow","createdDate":"2024-02-04T18:04:33.508+00:00"},{"id":"3","name":"Bills","description":"Pay Bills","createdDate":"2024-02-04T18:04:33.508+00:00"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/note/Grocery
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#getNote(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":"1","name":"Grocery","description":"buy grocery for today","createdDate":"2024-02-04T18:04:33.508+00:00"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/note/not%20exist
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#getNote(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.util.NoSuchElementException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"40"]
+     Content type = text/plain;charset=UTF-8
+             Body = Could not find note with name: not exist
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - GET /api/notes</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>GET /api/notes</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.kotlinspring.kotlinspringtestapp.controller.html">com.example.kotlinspring.kotlinspringtestapp.controller</a> &gt; NoteControllerTest$GetNewNote</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.038s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should return NOT FOUND if the name does not exist ()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should return a single note()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should return all notes()</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2024-02-05T02:04:33.698+08:00  INFO 35667 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$GetNewNote]: GetNewNote does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-05T02:04:33.699+08:00  INFO 35667 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.kotlinspring.kotlinspringtestapp.KotlinspringtestappApplication for test class com.example.kotlinspring.kotlinspringtestapp.controller.NoteControllerTest$GetNewNote
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/notes
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#getAllNotes()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Grocery&quot;,&quot;description&quot;:&quot;buy grocery for today&quot;,&quot;createdDate&quot;:&quot;2024-02-04T18:04:33.508+00:00&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Laundry&quot;,&quot;description&quot;:&quot;Do Laundry Tomorrow&quot;,&quot;createdDate&quot;:&quot;2024-02-04T18:04:33.508+00:00&quot;},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Bills&quot;,&quot;description&quot;:&quot;Pay Bills&quot;,&quot;createdDate&quot;:&quot;2024-02-04T18:04:33.508+00:00&quot;}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/note/Grocery
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#getNote(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Grocery&quot;,&quot;description&quot;:&quot;buy grocery for today&quot;,&quot;createdDate&quot;:&quot;2024-02-04T18:04:33.508+00:00&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/note/not%20exist
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController
+           Method = com.example.kotlinspring.kotlinspringtestapp.controller.NoteController#getNote(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.util.NoSuchElementException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:&quot;text/plain;charset=UTF-8&quot;, Content-Length:&quot;40&quot;]
+     Content type = text/plain;charset=UTF-8
+             Body = Could not find note with name: not exist
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 5 Feb 2024, 2:04:34 am</p>
+</div>
+</div>
+</body>
+</html>
